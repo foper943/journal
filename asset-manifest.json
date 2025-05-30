@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.94163d8b.css",
-    "main.js": "/static/js/main.0d651cde.js",
-    "static/js/453.2e601053.chunk.js": "/static/js/453.2e601053.chunk.js",
-    "index.html": "/index.html",
-    "main.94163d8b.css.map": "/static/css/main.94163d8b.css.map",
-    "main.0d651cde.js.map": "/static/js/main.0d651cde.js.map",
-    "453.2e601053.chunk.js.map": "/static/js/453.2e601053.chunk.js.map"
+    "main.css": "/attendance-journal_2/static/css/main.94163d8b.css",
+    "main.js": "/attendance-journal_2/static/js/main.29ba770d.js",
+    "static/js/453.2e601053.chunk.js": "/attendance-journal_2/static/js/453.2e601053.chunk.js",
+    "index.html": "/attendance-journal_2/index.html",
+    "main.94163d8b.css.map": "/attendance-journal_2/static/css/main.94163d8b.css.map",
+    "main.29ba770d.js.map": "/attendance-journal_2/static/js/main.29ba770d.js.map",
+    "453.2e601053.chunk.js.map": "/attendance-journal_2/static/js/453.2e601053.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.94163d8b.css",
-    "static/js/main.0d651cde.js"
+    "static/js/main.29ba770d.js"
   ]
 }
