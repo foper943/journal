@@ -1,0 +1,432 @@
+.subject-attendance {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.subject-title {
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 25px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #3498db;
+  font-size: 24px;
+}
+
+.loading, .error {
+  text-align: center;
+  padding: 20px;
+  font-size: 18px;
+}
+
+.error {
+  color: #e74c3c;
+}
+
+.controls {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.date-input, .group-select {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  flex-grow: 1;
+  max-width: 300px;
+}
+
+.students-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.student-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: box-shadow 0.3s;
+}
+
+.student-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.student-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #f8f9fa;
+  cursor: pointer;
+}
+
+.student-header h3 {
+  margin: 0;
+  color: #2c3e50;
+}
+
+.toggle-btn {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  color: #7f8c8d;
+}
+
+.attendance-details {
+  padding: 15px;
+  background-color: #fdfdfd;
+}
+
+.attendance-actions {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.present-btn, .absent-btn {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.present-btn {
+  background-color: #2ecc71;
+  color: white;
+}
+
+.present-btn:hover {
+  background-color: #27ae60;
+}
+
+.absent-btn {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.absent-btn:hover {
+  background-color: #c0392b;
+}
+
+.attendance-history {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.attendance-record {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.attendance-record:last-child {
+  border-bottom: none;
+}
+
+.attendance-date {
+  color: #7f8c8d;
+}
+
+.status-select {
+  padding: 5px 10px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.no-data {
+  color: #95a5a6;
+  text-align: center;
+  padding: 10px;
+}
+
+
+
+
+
+/*новые изменения*/
+/* Стили для компактного списка */
+.compact-students-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.compact-student-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 15px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.compact-student-card:hover {
+  transform: translateY(-2px);
+}
+
+.student-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.student-name {
+  font-weight: 500;
+  min-width: 150px;
+}
+
+.student-group {
+  color: #666;
+  font-size: 0.9em;
+}
+
+.last-status {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 20px;
+  font-size: 0.8em;
+}
+
+.last-status.present {
+  background-color: #e6f7e6;
+  color: #2ecc71;
+}
+
+.last-status.absent {
+  background-color: #ffebee;
+  color: #e74c3c;
+}
+
+.quick-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.quick-present-btn, .quick-absent-btn {
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 50%;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.quick-present-btn {
+  background-color: #2ecc71;
+  color: white;
+}
+
+.quick-absent-btn {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.quick-present-btn:hover {
+  background-color: #27ae60;
+  transform: scale(1.1);
+}
+
+.quick-absent-btn:hover {
+  background-color: #c0392b;
+  transform: scale(1.1);
+}
+
+/* Анимация подтверждения */
+@keyframes successPulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+.success-animation {
+  animation: successPulse 0.5s ease;
+}
+
+/* Добавляем в конец вашего CSS файла */
+
+.student-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.student-main-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.student-status {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.last-status {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 24px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.last-status.present {
+  background-color: #e6f7e6;
+  color: #2ecc71;
+  border: 2px solid #2ecc71;
+}
+
+.last-status.absent {
+  background-color: #ffebee;
+  color: #e74c3c;
+  border: 2px solid #e74c3c;
+}
+
+/* Добавляем новые стили для кнопок удаления */
+.delete-attendance-btn {
+  background: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 2px 8px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.delete-attendance-btn:hover {
+  background: #c0392b;
+}
+
+/* Дополняем существующие стили */
+.student-status {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.attendance-record {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Стили для поиска */
+.search-input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 15px;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Стили для группировки */
+.group-section {
+  margin-bottom: 30px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.group-title {
+  color: #34495e;
+  margin: 0 0 15px 0;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #eee;
+}
+
+/* Стили для панели быстрых действий */
+.quick-actions-panel {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.mark-all-btn {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.2s;
+}
+
+.mark-all-btn.present {
+  background-color: #2ecc71;
+  color: white;
+}
+
+.mark-all-btn.absent {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.mark-all-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+/* Стили для панели быстрых действий */
+.quick-actions-panel {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.mark-all-btn {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.2s;
+}
+
+.mark-all-btn.present {
+  background-color: #2ecc71;
+  color: white;
+}
+
+.mark-all-btn.absent {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.mark-all-btn.reset {
+  background-color: #f39c12;
+  color: white;
+}
+
+.mark-all-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
