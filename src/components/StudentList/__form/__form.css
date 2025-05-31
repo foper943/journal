@@ -1,0 +1,11 @@
+.student-list__form-section {
+  flex: 1;
+  padding-right: 40px;
+}
+
+.student-list__form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+}

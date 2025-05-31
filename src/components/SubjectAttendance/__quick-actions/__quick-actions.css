@@ -1,0 +1,5 @@
+.subject-attendance__quick-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}

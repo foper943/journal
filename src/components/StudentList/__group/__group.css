@@ -1,0 +1,14 @@
+.student-list__group {
+  margin-bottom: 25px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 15px;
+  background-color: #f9f9f9;
+}
+
+.student-list__group-header {
+  margin-top: 0;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #ddd;
+  color: #2c3e50;
+}

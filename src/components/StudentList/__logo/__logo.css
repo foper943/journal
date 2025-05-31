@@ -1,0 +1,13 @@
+.student-list__logo {
+  width: 300px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.student-list__logo-img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}

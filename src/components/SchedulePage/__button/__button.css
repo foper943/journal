@@ -1,0 +1,12 @@
+.schedule-page__button {
+  cursor: pointer;
+  border: none;
+  background: #2c3e50;
+  color: white;
+  border-radius: 4px;
+  padding: 5px 10px;
+}
+
+.schedule-page__button--delete {
+  background: #f44336;
+}

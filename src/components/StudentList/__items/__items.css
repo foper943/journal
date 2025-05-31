@@ -1,0 +1,15 @@
+.student-list__items {
+  list-style: none;
+  padding: 0;
+}
+
+.student-list__item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.student-list__item:hover {
+  background-color: #f9f9f9;
+}

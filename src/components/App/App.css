@@ -1,0 +1,31 @@
+/* Base */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+}
+
+/* Layout */
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+/* Responsive */
+@media (max-width: 740px) {
+  .app__nav {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .app__nav-link {
+    padding: 0.75rem 1rem;
+    text-align: center;
+  }
+
+  .app__header {
+    flex-direction: column;
+  }
+}

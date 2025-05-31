@@ -1,0 +1,33 @@
+.subject-attendance__actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+.subject-attendance__action-btn {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.subject-attendance__action-btn--present {
+  background: #2ecc71;
+  color: white;
+}
+
+.subject-attendance__action-btn--present:hover {
+  background: #27ae60;
+}
+
+.subject-attendance__action-btn--absent {
+  background: #e74c3c;
+  color: white;
+}
+
+.subject-attendance__action-btn--absent:hover {
+  background: #c0392b;
+}

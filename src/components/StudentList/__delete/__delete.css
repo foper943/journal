@@ -1,0 +1,19 @@
+.student-list__delete {
+  background: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.student-list__delete:hover {
+  background: #c0392b;
+  transform: scale(1.1);
+}

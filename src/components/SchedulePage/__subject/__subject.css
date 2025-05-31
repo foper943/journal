@@ -1,0 +1,14 @@
+.schedule-page__subject-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.schedule-page__subject-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  background: white;
+  margin: 5px 0;
+  border-radius: 4px;
+}

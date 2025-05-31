@@ -1,0 +1,15 @@
+.subject-attendance__record {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.subject-attendance__record:last-child {
+  border-bottom: none;
+}
+
+.subject-attendance__record-date {
+  color: #7f8c8d;
+}

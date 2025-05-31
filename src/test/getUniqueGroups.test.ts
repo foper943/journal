@@ -1,3 +1,4 @@
+/*Функцию, которая из списка студентов вытаскивает уникальные группы и сортирует их.*/
 import { getUniqueGroups } from './getUniqueGroups';
 
 describe('getUniqueGroups utility', () => {

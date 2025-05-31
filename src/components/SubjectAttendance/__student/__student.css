@@ -1,0 +1,47 @@
+.subject-attendance__students {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.subject-attendance__student {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: box-shadow 0.3s;
+}
+
+.subject-attendance__student:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.subject-attendance__student-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f8f9fa;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.subject-attendance__student-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.subject-attendance__student-name {
+  margin: 0;
+  color: #2c3e50;
+}
+
+.subject-attendance__student-group {
+  color: #666;
+  font-size: 0.9em;
+}
+
+.subject-attendance__student-status {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}

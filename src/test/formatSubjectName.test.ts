@@ -1,3 +1,8 @@
+/*Функцию, которая форматирует название предмета:
+
+Делает первую букву каждого слова заглавной
+
+Обрабатывает пустую строку*/
 import { formatSubjectName } from './formatSubjectName';
 
 describe('formatSubjectName utility', () => {

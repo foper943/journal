@@ -1,0 +1,9 @@
+.subject-attendance__state {
+  text-align: center;
+  padding: 20px;
+  font-size: 18px;
+}
+
+.subject-attendance__state--error {
+  color: #e74c3c;
+}

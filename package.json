@@ -1,4 +1,5 @@
 {
+  "homepage": "https://foper943.github.io/journal",
   "name": "attendance-journal_2",
   "version": "0.1.0",
   "private": true,
@@ -16,14 +17,16 @@
     "react-router-dom": "^7.6.1",
     "react-scripts": "5.0.1",
     "typescript": "^4.9.5",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4"    
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "api": "json-server --watch db.json --port 3001"
+    "api": "json-server --watch db.json --port 3001",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -50,6 +53,7 @@
     "axios-mock-adapter": "^2.1.0",
     "eslint": "^8.57.1",
     "eslint-config-prettier": "^10.1.5",
+    "gh-pages": "^6.3.0",
     "prettier": "^3.5.3"
   }
 }

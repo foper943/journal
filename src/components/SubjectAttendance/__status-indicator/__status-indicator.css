@@ -1,0 +1,22 @@
+.subject-attendance__status-indicator {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.subject-attendance__status-indicator--present {
+  background: #e6f7e6;
+  color: #2ecc71;
+  border: 2px solid #2ecc71;
+}
+
+.subject-attendance__status-indicator--absent {
+  background: #ffebee;
+  color: #e74c3c;
+  border: 2px solid #e74c3c;
+}

@@ -1,0 +1,11 @@
+.schedule-page__input-wrapper {
+  margin: 20px 0;
+  width: 100%;
+}
+
+.schedule-page__input {
+  padding: 8px;
+  width: 100%;
+  max-width: 300px;
+  box-sizing: border-box;
+}

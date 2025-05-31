@@ -1,0 +1,42 @@
+.subject-attendance {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* адаптивы */
+@media (max-width: 768px) {
+  .subject-attendance__controls {
+    flex-direction: column;
+  }
+
+  .subject-attendance__quick-actions,
+  .subject-attendance__actions {
+    flex-direction: column;
+  }
+
+  .subject-attendance__student-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .subject-attendance__record {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .subject-attendance__select-status,
+  .subject-attendance__mark-btn,
+  .subject-attendance__search,
+  .subject-attendance__select,
+  .subject-attendance__date {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+}

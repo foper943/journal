@@ -1,0 +1,12 @@
+.subject-attendance__delete-btn {
+  background: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 2px 8px;
+  cursor: pointer;
+}
+
+.subject-attendance__delete-btn:hover {
+  background: #c0392b;
+}

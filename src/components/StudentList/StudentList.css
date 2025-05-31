@@ -1,0 +1,28 @@
+.student-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* адаптив */
+@media (max-width: 768px) {
+  .student-list {
+    flex-direction: column;
+  }
+
+  .student-list__form-section {
+    padding-right: 0;
+  }
+
+  .student-list__logo {
+    width: 100%;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .student-list__group {
+    padding: 10px;
+  }
+}

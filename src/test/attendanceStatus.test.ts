@@ -1,3 +1,4 @@
+/*Функцию, которая проверяет статус студента на конкретную дату.*/
 import { getStatusForSelectedDate } from './attendanceUtils';
 
 describe('getStatusForSelectedDate utility', () => {
